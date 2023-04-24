@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text to Speech</title>
+
+  <script src="/static/main.js"></script>
+
+  <!--
+    - favicon
+  -->
+  <!-- <link rel="shortcut icon" href="#" type="image/x-icon"> -->
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="light-theme">
+
+  <!--
+    - #HEADER
+  -->
+
+  <header>
+
+    <div class="container">
+
+      <nav class="navbar">
+
+        <a href="#">
+          <h2 class="h2"><b>TS|</b>&nbsp;Project</h2>
+        </a>
+
+        <div class="btn-group">
+
+          <button class="theme-btn theme-btn-mobile light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+          <button class="nav-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="flex-wrapper">
+
+          <ul class="desktop-nav">
+
+            <li>
+              <a href="#" class="nav-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#container2" class="nav-link">How To Use?</a>
+            </li>
+
+            <li>
+              <a href="#playGround" class="nav-link">PlayGround</a>
+            </li>
+
+          </ul>
+
+          <button class="theme-btn theme-btn-desktop light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="mobile-nav">
+
+          <button class="nav-close-btn">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="wrapper">
+
+            <p class="h3 nav-title">Main Menu</p>
+
+            <ul>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#container2" class="nav-link">How To Use?</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#playGround" class="nav-link">PlayGround</a>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+
+    <!--
+      - #HERO SECTION
+    -->
+
+    <div class="hero">
+
+      <div class="container">
+
+        <div class="left">
+
+          <h1 class="h1">
+            WELCOME ON<br><b>Text&nbsp;To&nbsp;Speech</b>
+          </h1>
+
+          <p class="h3">
+            A site Where your words come to life! 
+          </p>
+          <div class="btn-group">
+            <button class="btn btn-secondary .btn-group">Proceed</button>
+          </div>
+        </div>
+
+        <div class="right">
+
+          <div class="pattern-bg"></div>
+          <div class="img-box">
+            <img src="https://res.cloudinary.com/boardinfinity/image/upload/t_blog_img/bi-websites/blog/11/blog-sheet-5--11-.png" alt="Image" class="hero-img">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+          </div>
+
+        </div>
+
+      </div>
+      <br><br><br>
+
+    </div>
+
+
+     <div class="middle-container2" id="playGround">
+         <h1 class="h1">Text To Speech</h1>
+        <div class="inner">
+          <label for="language-select"><h2 class="h2">Select Language :</h2></label>
+          <div class="custom-select">
+           <select class="select-class" id="language-select">
+                      <option value="english">SELECT</option>
+                      <option value="english">English</option>
+                      <option value="hindi">Hindi</option>
+                      <option value="bengali">Bengali</option>
+                      <option value="gujarati">Gujarati</option>
+                      <option value="marathi">Marathi</option>
+                      <option value="user-input">Custom</option>
+           </select>
+         </div>
+        </div>
+        <textarea name="" id="text-area" cols="30" rows="10"></textarea>
+         
+     </div>
+
+
+     <div class="middle-container2"  id="container2">
+       <h1 class="h1">How To Use ?</h1>
+       <div class="inner2">
+         <p class="h3"><b>Experience the power of our text-to-speech technology by trying out our demo trial!</b></p>
+
+   <ul id="second-list">
+    <li>
+      <p class="p"><ion-icon name="arrow-redo-sharp"></ion-icon>&nbsp; Select your preferred language from our extensive list of options</p>
+    </li>
+    <li>
+      <p class="p"><ion-icon name="arrow-redo-sharp"></ion-icon>&nbsp; Or select custom and type or copying and pasting any text you want to hear spoken aloud.</p>
+    </li>
+    <li>
+      <p class="p"><ion-icon name="arrow-redo-sharp"></ion-icon>&nbsp; Select the text that you want to listen then three button will appear on the top.</p>
+    </li>
+    <li>
+      <p class="p"><ion-icon name="arrow-redo-sharp"></ion-icon>&nbsp; Hit the "Play" button to hear your text come to life in a clear and natural-sounding voice.</p>
+    </li>
+    <li>
+      <p class="p"><ion-icon name="arrow-redo-sharp"></ion-icon>&nbsp; Simply relax and listen to your favorite book with our text-to-speech technology.</p>
+    </li>
+   </ul>
+       </div>
+         
+     </div>
+
+
+
+
+
+  <!--
+    - #FOOTER
+  -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="wrapper">
+
+        <a href="#" class="footer-logo">
+          <h2 class="h2"><b>TS|</b>&nbsp;Project</h2>
+        </a>
+
+        <p class="footer-text">
+          Enhance your text-to-speech experience. You can choose from a variety of Languages.
+        </p>
+        <br>
+        <h4 class="h4 footer-title">
+          Contact Us
+        </h4>
+        <div id="contact">
+         <a><ion-icon name="logo-facebook"></ion-icon></a>
+         <a><ion-icon name="logo-instagram"></ion-icon></a>
+         <a><ion-icon name="logo-whatsapp"></ion-icon></a>
+         <a><ion-icon name="mail-sharp"></ion-icon></a>
+        </div>
+      </div>
+
+      <div class="wrapper">
+
+        <p class="footer-title">TTS</p>
+
+        <ul>
+
+          <li>
+            <a href="#" class="footer-link">Gtts</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Flask</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Pygame</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Lang detection</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="wrapper">
+
+        <p class="footer-title">Front-End</p>
+
+        <ul>
+
+          <li>
+            <a href="#" class="footer-link">Javascript</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">CSS - for styling</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">HTML</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <p class="copyright">
+       <a>@copyright - Sriman</a> 
+    </p>
+
+  </footer>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="{{url_for('static', filename='js/script.js')}}"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
